@@ -1,7 +1,7 @@
 import sqlite3
 
 class Database():
-    conn = sqlite3.connect("sqlite_translate_bot.db")
+    conn = sqlite3.connect("sqlite_baza.db")
     cursor = conn.cursor()
 
     def create_table_users(self):

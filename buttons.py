@@ -1,6 +1,6 @@
 from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 
-# phone number
+# phone number button
 phone_number = ReplyKeyboardMarkup(
     keyboard = [
         [
@@ -18,7 +18,7 @@ languages = {
     "Russian 🇷🇺" : 'ru',
     "French 🇫🇷" : 'fr',
     "Arabic 🇦🇪" : 'ar',
-    "Chinese 🇨🇳" : 'cn',
+    "Chinese 🇨🇳" : 'zh-cn',
     "German 🇩🇪" : 'de',
     "Italian 🇮🇹" : 'it',
     "Japanese 🇯🇵" : 'ja',
