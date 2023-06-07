@@ -30,7 +30,6 @@ async def send_welcome(message: types.Message):
     if data is None:
         await message.reply("Send your phone number...", reply_markup=phone_number)
     else:
-        await message.reply("You were registered!")
         await message.reply("I'm Google Translate Bot!\nSend text...")    
     
 @dp.message_handler(content_types='contact')
@@ -40,10 +39,8 @@ async def send_welcome(message: types.Message):
     if data is None:
         db.insert_users(username, telegram_id, phone_number)
         await bot.send_message(admin, f"New user from @google_translate0_bot\n\nUsername: @{username}\nID: {telegram_id}")
-        await message.answer("You are successfully registered!")
         await message.reply("Hi\nI'm Google Translate Bot!\nSend text...")
     else:
-        await message.reply("You were registered!")
         await message.reply("I'm Google Translate Bot!\nSend text...")
 
 @dp.message_handler()

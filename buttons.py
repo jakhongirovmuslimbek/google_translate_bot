@@ -4,7 +4,7 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, InlineKeyboardMar
 phone_number = ReplyKeyboardMarkup(
     keyboard = [
         [
-            KeyboardButton("📞 Share your phone number!", request_contact=True)
+            KeyboardButton("📞 Share phone number!", request_contact=True)
         ]
     ],
     resize_keyboard=True
